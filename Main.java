@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by andrey on 04.04.16.
  */
@@ -13,6 +15,13 @@ public class Main {
 
         Rectangle r1 = new Rectangle(3, 7);
         System.out.println("Rectangle area: " + r1.getArea());
+
+        Figure[] figList = {new Rectangle(10,261), new Circle(10), new Triangle(3,5,4)};
+        Arrays.sort(figList);
+
+        for (Figure fig:figList){
+            System.out.print(fig.getArea() + " ");
+        }
     }
 }
 /*

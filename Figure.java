@@ -1,7 +1,7 @@
 /**
  * Created by andrey on 04.04.16.
  */
-public class Figure {
+public class Figure implements Comparable {
     private int xAxis;
     private int yAxis;
     private boolean transparent;
@@ -25,5 +25,22 @@ public class Figure {
 
     public int getyAxis(){
         return yAxis;
+    }
+
+    public double getArea(){
+        return 0;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Figure figure = (Figure) o;
+
+        if (this.getArea() < figure.getArea()){
+            return -1;
+        } else if (this.getArea() == figure.getArea()){
+            return 0;
+        } else if (this.getArea() > figure.getArea()){
+            return 1;
+        } else return 99;
     }
 }

@@ -24,6 +24,7 @@ public class Circle extends Figure {
         return 2 * Math.PI * radius;
     }
 
+    @Override
     public double getArea(){
         return Math.PI * (radius * radius);
     }

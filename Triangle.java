@@ -46,6 +46,7 @@ public class Triangle extends Figure {
         return sideA + sideB + sideC;
     }
 
+    @Override
     public double getArea(){                // Heron's formula
         int s = (this.getPerimeter() / 2);
         return Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));

@@ -40,7 +40,8 @@ public class Rectangle extends Figure {
         return 2 * (sideA + sideB);
     }
 
-    public int getArea(){
+    @Override
+    public double getArea(){
         return sideA * sideB;
     }
 }
