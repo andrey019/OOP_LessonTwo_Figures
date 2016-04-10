@@ -19,6 +19,7 @@ public class Main {
         Figure[] figList = {new Rectangle(10,261), new Circle(10), new Triangle(3,5,4)};
         Arrays.sort(figList);
 
+        System.out.println();
         for (Figure fig:figList){
             System.out.print(fig.getArea() + " ");
         }
@@ -27,7 +28,8 @@ public class Main {
 /*
 Triangle area: 4.242640687119285
 Circle area: 706.8583470577034
-Rectangle area: 21
+Rectangle area: 21.0
 
+6.0 314.1592653589793 2610.0
 Process finished with exit code 0
 */
